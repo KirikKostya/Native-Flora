@@ -1,0 +1,84 @@
+.MainContainer{
+    display: flex;
+    flex-direction: column;
+}
+.ContainerForGreeting{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.ContainerForGreeting .LOGO{
+    width: 571px;
+    height: 266px;
+    margin: 25px;
+    background: url('../PHOTOS/NativeFloraLOGO.png');
+}
+.ContainerForGreeting .LeftText{
+    width: 700px;
+    height: 100vh;
+    background-color: #46D143;
+    display: flex;
+    flex-direction: column;
+}
+.LeftText .NavBar{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    margin-top: 30px;
+}
+.NavBar .NavLink{
+    color: #FFFFFF;
+    font-size:x-large;
+    -webkit-text-stroke-width: 0.5px;
+    -webkit-text-stroke-color: #000;
+    text-decoration: none;
+}
+.NavBar .NavLink:hover{
+    color: rgb(88, 88, 253);
+}
+.PriviewText{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 100px 30px;
+}
+.PriviewText .Welcome{
+   color:#000;
+   -webkit-text-stroke-width: 0.5px;
+    -webkit-text-stroke-color: #FFF;
+}
+.PriviewText .Info{
+    width: 500px;
+    font-weight: 500;
+    color: rgb(12, 12, 65);
+    font-size: large;
+}
+.Info span{
+    font-weight: 700;
+}
+.PriviewText .GoodLuck{
+    color: black;
+    font-size: larger;
+    font-weight: 800;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+.LeftText .Autorizate-BTNS{
+    width: 400px;
+    margin-left: 140px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+.Autorizate-BTNS .BTN{
+    text-decoration: none;
+    color: #2f00ff;
+    border-radius: 20px;
+    border: 1px solid green;
+    padding: 10px;
+    background-color: rgb(188, 231, 31);
+}
+.Autorizate-BTNS .BTN:hover{
+    color: rgb(188, 231, 31);
+    background-color: #6244e7;
+}
