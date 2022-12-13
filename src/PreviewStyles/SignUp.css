@@ -1,0 +1,96 @@
+.ContainerForSignUp{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.ContainerForSignUp .BackGround{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: row;
+    position: absolute;
+    z-index: -1;
+    background-color: white;
+}
+.BackGround .LeftPart{
+    width: 33%;
+    height: 100vh;
+    background-color: #0FDC6D;
+    opacity: 70%;
+    border-radius: 0 35px 35px 0;
+}
+.BackGround .Center{
+    width: 34%;
+    height: 100vh;
+}
+.BackGround .RightPart{
+    width: 33%;
+    height: 100vh;
+    background-color: #0FDC6D;
+    opacity: 70%;
+    border-radius: 35px 0 0 35px ;
+}
+.ContainerForSignUp .SignUp{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 500px;
+    height: 400px;
+    background-color: #F6F2F2;
+    border: 3px solid #22AD5A;
+    border-radius: 37px;
+}
+.SignUp .ForInputs{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.ForInputs .PasswordField{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+.PasswordField .EyeBtn{
+    position: absolute;
+    margin-left: 300px;
+}
+.SignUp .Input{
+    width: 350px;
+    height: 40px;
+    background-color: transparent;
+    border: none;
+    border-bottom: 3px solid #31C537 !important;
+    color: black;
+    font-size: larger;
+    padding-left: 15px;
+    margin: 18px 0;
+    outline: none;
+}
+.SignUp .Input::-webkit-input-placeholder { 
+    color: black;
+}
+.SignUp .SignUpBTN{
+    width: 140px;
+    height: 50px;
+    background-color: #46D143;
+    opacity: 70%;
+    border-radius: 20px;
+    font-size: large;
+    color: rgb(21, 21, 21);
+    font-weight: 500;
+    font-family: AdventPro;
+}
+.SignUp .SignUpBTN:hover{
+    opacity: 100%;
+    color: black;
+    cursor: pointer;
+}
+.ActiveInput{
+    border-bottom:3px solid red !important ;
+}

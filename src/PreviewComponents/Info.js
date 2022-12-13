@@ -1,4 +1,5 @@
 import React, {useState, useEffect} from 'react'
+import BackButton from './BackButton.js'
 import '../PreviewStyles/Info.css'
 
 export default function Info() {

@@ -20,8 +20,8 @@ export default function Router() {
             <Route path='/Info' element={<Info />}/>
         </Routes>
         
-        {/*
-        <Routes>
+        
+        {/* <Routes>
             <Route path='/AboutUs' element={<AboutUs />}/>
         </Routes>
 
@@ -31,15 +31,15 @@ export default function Router() {
 
         <Routes>
             <Route path='/Contact' element={<Contact />}/>
-        </Routes>
+        </Routes> */}
 
-        <Routes>
+        {/* <Routes>
             <Route path='/SignIn' element={<SignIn />}/>
-        </Routes>
+        </Routes> */}
 
         <Routes>
             <Route path='/SignUp' element={<SignUp />}/>
-        </Routes> */}
+        </Routes> 
     </BrowserRouter>
 )
 }
