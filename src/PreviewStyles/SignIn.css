@@ -1,7 +1,7 @@
 .ContainerForSignIn{
     width: 100%;
     height: 100vh;
-    background: url('../PHOTOS/krasivyy-zelenyy-fon-dlya-fotoshopa.png');
+    background: url('../PHOTOS/BackGroundForSignIn.png');
     background-size: cover;
     display: flex;
     flex-direction: column;

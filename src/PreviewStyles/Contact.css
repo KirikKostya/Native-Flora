@@ -1,7 +1,7 @@
 .Main{ 
     width: 100%;
     height: 100vh;
-    background: url('../PHOTOS/BGImage.png');
+    background: url('../PHOTOS/BackGroundForContact.png');
     background-size: cover;
     display: flex;
     flex-direction: column;
@@ -29,7 +29,7 @@
 .Info .Photo_Liza{
     width: 100px;
     height: 100px;
-    background: url('../PHOTOS/photo_2022-12-14_18-47-15.png');
+    background: url('../PHOTOS/LizaPhoto.png');
     background-size: cover;
     border-radius: 50%;
     margin-top: 30px;
@@ -38,7 +38,7 @@
 .Info .Photo_Kostya{
     width: 100px;
     height: 100px;
-    background: url('../PHOTOS/photo_2022-12-14_15-58-34.png');
+    background: url('../PHOTOS/KostyaPhoto.png');
     background-size: cover;
     border-radius: 50%;
     margin-top: 30px;
