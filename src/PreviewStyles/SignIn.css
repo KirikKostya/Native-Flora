@@ -1,40 +1,14 @@
-.ContainerForSignUp{
+.ContainerForSignIn{
     width: 100%;
     height: 100vh;
+    background: url('../PHOTOS/krasivyy-zelenyy-fon-dlya-fotoshopa.png');
+    background-size: cover;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    background: url('../PHOTOS/kartinki-na-zadnij-fon-3.зтп.png');
-    background-size: cover;
 }
-.ContainerForSignUp .BackGround{
-    width: 100%;
-    height: 100vh;
-    display: flex;
-    flex-direction: row;
-    position: absolute;
-    z-index: -1;
-}
-/* .BackGround .LeftPart{
-    width: 33%;
-    height: 100vh;
-    background-color: #0FDC6D;
-    opacity: 70%;
-    border-radius: 0 35px 35px 0;
-}
-.BackGround .Center{
-    width: 34%;
-    height: 100vh;
-}
-.BackGround .RightPart{
-    width: 33%;
-    height: 100vh;
-    background-color: #0FDC6D;
-    opacity: 70%;
-    border-radius: 35px 0 0 35px ;
-} */
-.ContainerForSignUp .SignUp{
+.ContainerForSignIn .SignIn{
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -42,11 +16,10 @@
     width: 500px;
     height: 400px;
     background-color: transparent;
-    box-shadow: inset 0 0 15px 10px rgba(54, 54, 54, 0.532);
-    /* border: 3px solid #22AD5A; */
+    box-shadow: inset 0 0 15px 10px rgba(252, 233, 233, 0.532);
     border-radius: 37px;
 }
-.SignUp .ForInputs{
+.ForInputs{
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -65,7 +38,7 @@
     background: transparent;
     cursor: pointer;
 }
-.SignUp .Input{
+.SignIn .Input{
     width: 350px;
     height: 40px;
     background-color: transparent;
@@ -78,10 +51,10 @@
     margin: 18px 0;
     outline: none;
 }
-.SignUp .Input::-webkit-input-placeholder { 
+.SignIn .Input::-webkit-input-placeholder { 
     color: black;
 }
-.SignUp .SignUpBTN{
+.SignIn .SignIpBTN{
     width: 140px;
     height: 50px;
     background-color: #46D143;
@@ -92,11 +65,18 @@
     font-weight: 500;
     font-family: AdventPro;
 }
-.SignUp .SignUpBTN:hover{
+.SignIn .SignIpBTN:hover{
     opacity: 100%;
     color: black;
     cursor: pointer;
 }
-.ActiveInput{
-    border-bottom:3px solid red !important ;
+.SignIn p{
+    color: white;
+    border-radius: 20px;
+    padding: 10px;
+    background-color: rgba(0, 0, 0, 0.557);
+}
+.SignIn .NavLink{
+    color: red;
+    text-decoration: none;
 }

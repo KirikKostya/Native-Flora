@@ -1,0 +1,87 @@
+.Main{ 
+    width: 100%;
+    height: 100vh;
+    background: url('../PHOTOS/BGImage.png');
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: white;
+}
+.ContainerForContact{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.ContainerForContact .Info{
+    width: 400px;
+    height: 80vh;
+    box-shadow: 5px 5px 5px 5px rgba(255, 255, 255, 0.363);
+    border-radius: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.Info .Photo_Liza{
+    width: 100px;
+    height: 100px;
+    background: url('../PHOTOS/photo_2022-12-14_18-47-15.png');
+    background-size: cover;
+    border-radius: 50%;
+    margin-top: 30px;
+    border: 2px solid rgb(60, 255, 0);
+}
+.Info .Photo_Kostya{
+    width: 100px;
+    height: 100px;
+    background: url('../PHOTOS/photo_2022-12-14_15-58-34.png');
+    background-size: cover;
+    border-radius: 50%;
+    margin-top: 30px;
+    border: 2px solid rgb(60, 255, 0);
+}
+.Info .Parametrs{
+    width: 350px;
+    display: flex;
+    flex-direction: column;
+}
+p{
+    font-weight: 600;
+    font-size: large;
+}
+p span{
+    margin-left: 30px;
+    font-weight: 500;
+    font-size: larger;
+    font-family: Monospace;
+}
+.Info .MassagerIcons{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin-top: 30px;
+}
+.MassagerIcons svg{
+    width: 50px;
+    height: 50px;
+    margin: 10px;
+}
+a{
+    color:white ;
+}
+.MassagerIcons svg:hover{
+    cursor: pointer;
+    color: black;
+}
+.MobilePhone{
+    color: white;
+    font-size: larger;
+}
+.close{
+    display: none;
+}

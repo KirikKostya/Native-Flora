@@ -23,7 +23,7 @@ export default function Preview() {
                   
                   <p className='Info'>
                     to the interactive portal for assembling your own bouquets with a large assortment of different flowers! 
-                    Here you can choose a bouquet based on your preferences and tastes. More information about our website can be found at <span>Info</span>. 
+                    Here you can choose a bouquet based on your preferences and tastes. More information about our website can be found at <NavLink className='NavLink' to='/'>Info</NavLink>. 
                   </p>
 
                   <p className='GoodLuck'>Happy building and good luck!</p>

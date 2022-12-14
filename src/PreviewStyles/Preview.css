@@ -54,8 +54,9 @@
     color: rgb(12, 12, 65);
     font-size: large;
 }
-.Info span{
-    font-weight: 700;
+.Info .NavLink{
+    color: rgb(103, 26, 26);
+    text-decoration: none;
 }
 .PriviewText .GoodLuck{
     color: black;

@@ -27,15 +27,15 @@ export default function Router() {
 
         <Routes>
             <Route path='/OurServices' element={<OurServices />}/>
-        </Routes>
+  </Routes>*/}
 
         <Routes>
             <Route path='/Contact' element={<Contact />}/>
-        </Routes> */}
+        </Routes> 
 
-        {/* <Routes>
+        <Routes>
             <Route path='/SignIn' element={<SignIn />}/>
-        </Routes> */}
+        </Routes>
 
         <Routes>
             <Route path='/SignUp' element={<SignUp />}/>
