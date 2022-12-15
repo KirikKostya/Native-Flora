@@ -9,7 +9,7 @@ import SignUp from './PreviewComponents/SignUp.js'
 import Priview from './PreviewComponents/Priview.js'
 
 
-export default function Router() {
+export default function Router({setStep}) {
   return (
     <BrowserRouter>
         <Routes>
@@ -21,20 +21,20 @@ export default function Router() {
         </Routes>
         
         
-        {/* <Routes>
+        <Routes>
             <Route path='/AboutUs' element={<AboutUs />}/>
         </Routes>
 
         <Routes>
             <Route path='/OurServices' element={<OurServices />}/>
-  </Routes>*/}
+        </Routes>
 
         <Routes>
             <Route path='/Contact' element={<Contact />}/>
         </Routes> 
 
         <Routes>
-            <Route path='/SignIn' element={<SignIn />}/>
+            <Route path='/SignIn' element={<SignIn setStep={setStep}/>}/>
         </Routes>
 
         <Routes>

@@ -3,11 +3,14 @@ import { NavLink } from 'react-router-dom'
 import '../PreviewStyles/SignIn.css'
 import BackButton from './BackButton';
 
-export default function SignIn() {
+export default function SignIn({setStep}) {
     let PasswordInput;
-  useEffect(()=>{
-     PasswordInput = document.querySelector('#PasswordInput');
-  }, [])
+    let LoginInput;
+  
+    useEffect(()=>{
+      PasswordInput = document.querySelector('#PasswordInput');
+      LoginInput = document.querySelector('#Login');
+    }, [])
   
   const showPassword = ()=>{
     if(PasswordInput.type == 'password'){
@@ -16,6 +19,28 @@ export default function SignIn() {
       PasswordInput.type = 'password'
     }
   }
+
+  const SignIn = (e) =>{
+    e.preventDefault()
+    
+    const UsersOfLocalStorage = Object.values(localStorage);
+    console.log(UsersOfLocalStorage)
+    console.log(PasswordInput, LoginInput)
+        for(let user of UsersOfLocalStorage){
+            
+          const parseUser = JSON.parse(user);
+
+            if(parseUser.login == LoginInput.value 
+                &&
+               parseUser.password == PasswordInput.value) {
+                setStep(1);
+
+            } else {
+                console.log('Try again!')
+            }
+        }
+    }
+
   return (
     <div className='ContainerForSignIn'>
         <BackButton />
@@ -24,7 +49,7 @@ export default function SignIn() {
 
             <div className='ForInputs'>
                 
-                <input className='Input' placeholder='Login'/>
+                <input id='Login' className='Input' placeholder='Login'/>
                 <div className='PasswordField'>
                   <input id='PasswordInput' className='Input' type='password' placeholder='Password'/>
                   <button onClick={showPassword} className='EyeBtn'>&#128065;&#65039;</button>
@@ -32,7 +57,7 @@ export default function SignIn() {
 
             </div>
 
-            <button className='SignIpBTN'>Create Account</button>
+            <button className='SignIpBTN' onClick={SignIn}>SignIn</button>
             <p>First time with us? <NavLink className='NavLink' to='/SignUp'>SignUp</NavLink> now.</p>
         </div>
     </div>

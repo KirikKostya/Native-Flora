@@ -1,3 +1,38 @@
 .ContainerForAboutUs{
-    
+    width: 100%;
+    height: 100vh;
+    background: url('../PHOTOS/b.png');
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.ContainerForAboutUs h1{
+    color: white
+}
+.ContainerForAboutUs ul{
+    display: flex;
+    margin: 10px 0;
+}
+.ContainerForAboutUs .Card{
+    width: 350px;
+    height: 80vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: aliceblue;
+    margin: 0 10px;
+    opacity: 60%;
+    border-radius: 20px;
+}
+.Card h1{
+    padding: 0;
+    margin: 0;
+    text-align: center;
+    color: black;
+}
+.Card p{
+    margin-top: 30px;
+    text-align: center;
 }

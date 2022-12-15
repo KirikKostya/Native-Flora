@@ -1,6 +1,7 @@
 import React, {useState, useEffect} from 'react'
 import BackButton from './BackButton.js'
 import '../PreviewStyles/Info.css'
+import { NavLink } from 'react-router-dom'
 
 export default function Info() {
 
@@ -16,6 +17,7 @@ export default function Info() {
   return (
     <div className='ConteinerForInfo'>
       <div className='LeftPartWithText'>
+        <NavLink className='Back' to='/'>&#11013;</NavLink>
           <h1>INFORMATION</h1>
 
           <div className='Info'>
@@ -29,7 +31,7 @@ export default function Info() {
 
       <div className='Animation'>
         
-        <div className='Card' onClick={()=>setIsOpen('')}>
+        <div className='TestCard' onClick={()=>setIsOpen('')}>
           <div className='TUBME close'>
             <p>TUB ME</p>
           </div>
