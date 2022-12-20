@@ -12,6 +12,7 @@
     height: 266px;
     margin: 25px;
     background: url('../PHOTOS/NativeFloraLOGO.png');
+    background-size: cover;
 }
 .ContainerForGreeting .LeftText{
     width: 700px;

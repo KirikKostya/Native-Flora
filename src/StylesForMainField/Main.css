@@ -1,0 +1,84 @@
+.ContainerForMain{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.ContainerForMain .UpSider{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    margin:  5px;
+}
+.UpSider .Logo{
+    width: 214px;
+    height: 90px;
+    margin-left: -110px;
+}
+.UpSider .SearchField{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+.SearchField .SearchInput{
+    width: 300px;
+    height: 22px;
+    color: rgb(0, 0, 0);
+    font-weight: bold;
+    border-radius: 50px 0 0 50px;
+    border: none;
+    outline: none;
+    background-color: #f42a2a5d;
+    padding: 10px;
+}
+.SearchField .SearchBTN{
+    width: 50px;
+    height: 42px;
+    border-radius: 0 50px 50px 0;
+    border: none;
+    background-color: #46D143;
+    opacity: 80%;
+}
+.SearchField .SearchBTN:hover{
+    opacity: 100%;
+    cursor: pointer;
+}
+.UpSider .MyAccount{
+    width: 50px;
+    height: 50px;
+    background-color: rgb(49, 48, 48);
+    border-radius: 50%;
+    opacity: 50%;
+}
+.ContainerForMain .CardField{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    background-color: #ADF5AC;
+}
+.CardField .CardList{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+.CardList .Card{
+    width: 220px;
+    height: 225px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #20ea88b6;
+    border-radius:20px ;
+    padding: 20px 0;
+    margin: 10px;
+}
+.CardField .IMG{
+    width: 170px;
+    height: 150px;
+    border-radius: 5px;
+}

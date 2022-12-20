@@ -6,7 +6,7 @@ import Router_2 from './Router_2.js'
 
 export default function App() {
   
-  const [step, setStep] = useState(0)
+  const [step, setStep] = useState(1)
   
   return (
     <div>
