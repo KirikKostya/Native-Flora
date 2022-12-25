@@ -4,17 +4,17 @@
     align-items: center;
 }
 .ContainerForMain .UpSider{
-    width: 100%;
+    width: 95%;
     display: flex;
     flex-direction: row;
     align-items: center;
-    justify-content: space-around;
+    justify-content: space-between;
     margin:  5px;
 }
 .UpSider .Logo{
     width: 214px;
     height: 90px;
-    margin-left: -110px;
+    /* margin-left: -110px; */
 }
 .UpSider .SearchField{
     display: flex;
@@ -33,6 +33,16 @@
     background-color: #f42a2a5d;
     padding: 10px;
 }
+.SearchField .ClearBTN{
+    height: 42px;
+    padding: 0 10px 0 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #f42a2a5d;
+    cursor: pointer;
+}
 .SearchField .SearchBTN{
     width: 50px;
     height: 42px;
@@ -48,12 +58,13 @@
 .UpSider .MyAccount{
     width: 50px;
     height: 50px;
-    background-color: rgb(49, 48, 48);
+    /* background-color: rgb(49, 48, 48); */
     border-radius: 50%;
     opacity: 50%;
 }
 .ContainerForMain .CardField{
     width: 100%;
+    min-height: calc(100vh - 100px);
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -81,4 +92,32 @@
     width: 170px;
     height: 150px;
     border-radius: 5px;
+}
+
+
+/* adaptation for different devices*/
+
+@media screen and (max-width: 710px) {
+    .ContainerForMain .UpSider{
+        justify-content: space-around;
+    }
+    .UpSider .Logo{
+        display: none;
+    }
+    .ContainerForMain .CardField{
+        width: 100%;
+        min-height: calc(100vh - 50px);
+    }
+}
+
+@media screen and (max-width: 525px){
+    .SearchField .SearchInput{
+        width: 150px;
+    }
+}
+
+@media screen and (max-width: 310px){
+    .UpSider .MyAccount{
+        display: none;
+    }
 }
